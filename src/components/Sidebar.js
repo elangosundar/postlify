@@ -2,14 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import styled from "styled-components";
-import { HomeIcon } from './Icon';
+import { HomeIcon, RequestIcon, ResponseIcon } from './Icon';
 
 const SidebarWrapper = styled.div`
   position: fixed;
   left: 0;
   height: 100vh;
   width: 75px;
-  /* background: ${(props) => props.theme.grey}; */
   background-color: var(--bg-dark-color);
   padding-top: 10px;
   overflow: auto;
@@ -73,7 +72,7 @@ const Sidebar = () => {
           to="/"
           activeClassName="active"
         >
-          <HomeIcon />
+          <RequestIcon />
           {/* <span>Home</span> */}
         </NavLink>
       </div>
@@ -84,7 +83,7 @@ const Sidebar = () => {
           to="/"
           activeClassName="active"
         >
-          <HomeIcon />
+          <ResponseIcon />
           {/* <span>Home</span> */}
         </NavLink>
       </div>

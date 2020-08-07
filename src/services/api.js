@@ -14,11 +14,35 @@ export const requestHandler = (requesData) => {
     // data: ''
   }).then( (response) => {
     return response;
-    // console.log(response.data);
-    // console.log(response.status);
-    // console.log(response.statusText);
-    // console.log(response.headers);
-    // console.log(response.config);
+  }).catch( (error) => {
+    const errorMsg = 'Network Error. Check console for more Errors';
+
+    if (error.response) {
+      console.log(error.response.data);
+      console.log(error.response.status);
+      const resError = { 
+        'data' : error.response.data ? error.response.data : errorMsg,
+        'status' : error.response.status ? error.response.status : '400'
+      };
+
+      return resError;
+    } else if (error.request) {
+      console.log(error.request);
+      const reqError ={
+        'data' : errorMsg,
+        'status' : '400'
+      };
+
+      return reqError;
+    } else {
+      console.log('Error', error.message);
+      const reqError = {
+        'data' : error.message ? error.message : errorMsg,
+        'status' : '400'
+      };
+
+      return reqError;
+    }
   });
 }
 

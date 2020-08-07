@@ -9,6 +9,7 @@ const BuilderWrapper = styled.div`
     padding: 0.7rem 0.7rem;
     float: left;
     background-color: var(--bg-dark-color);
+    border-radius: 8px;
 
 ul {
     margin: 4px 0;
@@ -42,11 +43,6 @@ ul li {
     border-radius: 8px;
 }
 
-.inner-response {
-    padding: 15px;
-    border-radius: 8px;
-}
-
 .output {
     margin-top: 12px;
 }
@@ -54,6 +50,7 @@ ul li {
 .resStatus {
     border: none;
     width: calc(100% - 20px);
+    color: green;
 }
 
 .method, code, input, kbd, pre, select, textarea {
@@ -114,6 +111,10 @@ label {
 
 .clear {
     clear: both;
+}
+
+.ace_content{
+    background-color: var(--bg-dark-color)
 }
 
 @media screen and (max-width: 1093px) {

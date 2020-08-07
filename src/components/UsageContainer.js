@@ -10,14 +10,15 @@ const Wrapper = styled.div`
   padding: 0.7rem 0.7rem;
   float: left;
   background-color: var(--bg-dark-color);
+  color: var(--fg-light-color);
   margin-left: 8px;
+  border-radius: 8px;
 
     .page-columns-right {
-        flex: 1;
-        flex-flow: column;
-        padding: 10px;
-        /* border: 1px solid; */
-        width: 100%;
+      flex: 1;
+      flex-flow: column;
+      padding: 10px;
+      width: 100%;
     }
 
     @media screen and (max-width: 1093px) {
@@ -44,7 +45,7 @@ const UsageContainer = () => {
   return (
     <Wrapper>
       <div className="page-columns-right">
-        Welcome to UsageContainer page
+        <label> Welcome to History Container page </label>
       </div>
     </Wrapper>
   );

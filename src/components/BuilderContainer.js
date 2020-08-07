@@ -8,7 +8,7 @@ import { getProductsError, getProducts, getProductsPending } from '../reducers/p
 import BuilderWrapper from "../styles/BuilderWrapper";
 import { requestHandler } from "../services/api";
 
-import ResponseCard from './ResponseCard';
+import Response from './Response';
 
 class BuilderContainer extends Component {
   state = {
@@ -40,11 +40,10 @@ class BuilderContainer extends Component {
 
   render() {
     // console.log(this.props);
-    console.log(this.state)
+    // console.log(this.state)
     return (
       <BuilderWrapper>
         <div className="page-columns">
-          <h1> API Request Builder</h1>
           <div className="request">
             <form onSubmit={this.handleSubmit}>
               <ul>
@@ -86,28 +85,7 @@ class BuilderContainer extends Component {
           </div>
         </div>
         <div className="response">
-          <div className="inner-response">
-            <label> Response for API Request </label>
-            { this.state.apiResponse.status ?
-              (
-              
-              <div className="output">
-                <label> Status </label>
-                <div>
-                  <input 
-                      type="text"
-                      name="status"
-                      readOnly="readOnly"
-                      className="resStatus"
-                      value={this.state.apiResponse.status}
-                    />
-                </div>
-
-                <label> JSON Response </label>
-                <ResponseCard data={this.state.apiResponse.data} />
-              </div>)
-              : null}
-          </div>
+          <Response data={ this.state.apiResponse } />
         </div>
       </BuilderWrapper>
     );
