@@ -26,6 +26,8 @@ Postlify - API request builder, built with React and Redux. It is alternative fo
 
 # Demo
 
+<a href="https://postlify.netlify.app"><img src="https://raw.githubusercontent.com/elangosundar/postlify/master/Postlify-API-request-builder-built-with-React-and-Redux.png" alt="Postlify - API request builder" /></a>
+
 <hr>
 
 Contributions are welcomed! <3
