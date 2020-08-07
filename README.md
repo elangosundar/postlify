@@ -28,4 +28,4 @@ Postlify - API request builder, built with React and Redux. It is alternative fo
 
 Contributions are welcomed! <3
 
-Made with heart and React.
+Made with :heart: and React.
