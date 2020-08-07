@@ -6,8 +6,8 @@ Postlify - API request builder, built with React and Redux. It is alternative fo
 
 - Website - [https://postlify.netlify.app](https://postlify.netlify.app)
 - Repo - [https://github.com/elangosundar/postlify](https://github.com/elangosundar/postlify)
-- Report Bug - [https://github.com/elangosundar/postlify](https://github.com/elangosundar/postlify)
-- Request Feature - [https://github.com/elangosundar/postlify](https://github.com/elangosundar/postlify)
+- Report Bug - [Report Bug](https://github.com/elangosundar/postlify/issues/new/choose)
+- Request Feature - [Request Feature](https://github.com/elangosundar/postlify/issues/new/choose)
 
 # Core packages
 
